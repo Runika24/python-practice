@@ -147,3 +147,55 @@ if (a < b + c) and (b < c + a) and (c < b + a):
     print("three sides lenght form a valid triangle");
 else:
     print("invalid")
+
+#----------------------------------------------------------------------------
+
+#Write a program to find the greatest of three numbers.
+
+a = int(input("enter a number1 :"))
+b = int(input("enter a number2 :"))
+c = int(input("enter a number3 :"))
+if a > b and a > c:
+    print("a is the greatest number",a)
+elif b > a and b > c: 
+    print("b is the greatest number",b)
+elif c > a and c >b:
+    print("c is the greatest number",c)
+else:
+    print("invlid numbers!!")
+
+    #Check if a year is a leap year.
+
+year = int(input("enter a year : "))
+if (year % 4 ==0 and year % 100 != 0) or (year % 400 ==0):
+    print("Leap year")
+else:
+    print("Not a leap year")    
+
+# Calculate the grade of a student based on the marks they score:
+#1. 90-100: Grade A
+#2. 80-89: Grade B
+#3. 70-79: Grade C
+#4. <70: Fail.
+
+student_marks = int(input("enter marks of the student :"))
+if student_marks >= 90 and student_marks <100:
+    print("A grade")
+elif student_marks >= 80 and student_marks <90:
+    print("B grade")
+elif student_marks >= 70 and student_marks <80:
+    print("C grade")
+elif student_marks >=0 and student_marks<70:
+    print("Fail")
+else:
+    print("invalid input")       
+
+# Write a program to check if three sides length form a valid triangle.
+
+a = float(input("lenght of side 1:"))
+b = float(input("lenght of side 2:"))
+a = float(input("lenght of side 3:"))
+if (a < b + c) and (b < c + a) and (c < b + a):
+    print("three sides lenght form a valid triangle");
+else:
+    print("invalid")
